@@ -25,32 +25,23 @@ template <typename T> bool test(const std::vector<T>& monVecteur);
 
 
 // Définition
-// Fonction nécessaire pour le tri d'un vecteur, elle échange deux valeurs
-template <typename T> void swap(std::vector<T>& monVecteur, const size_t premier, 
-                                const size_t second)
-{
-   T temp = monVecteur[premier];
-   monVecteur[premier] = monVecteur[second];
-   monVecteur[second] = temp;
-}
-
 // Fonction générique qui trie un vecteur avec l'algorithme bubble sort
 template <typename T> void tri(std::vector<T>& monVecteur, size_t taille) 
 {
-   bool swapped = true;
+   bool echange = true;
    int j = 0;
-   T tmp;
-   while (swapped) 
+   T temp;
+   while (echange) 
    {
-      swapped = false;
+      echange = false;
       j++;
       for (int i = 0; i < taille - j; i++) {
          if (monVecteur[i] > monVecteur[i + 1]) 
          {
-            tmp = monVecteur[i];
+            temp = monVecteur[i];
             monVecteur[i] = monVecteur[i + 1];
-            monVecteur[i + 1] = tmp;
-            swapped = true;
+            monVecteur[i + 1] = temp;
+            echange = true;
          }
       }
    }

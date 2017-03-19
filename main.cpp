@@ -36,11 +36,14 @@ int main()
     
     
    // Affichage des vecteurs
+    cout << "Vecteurs non tries: " << endl;
     cout << vString << endl; // définie dans Tri.h
     cout << vCouleur << endl;
     cout << vPoint << endl;
     cout << vDate << endl;
     
+    cout << "#############################################################" << endl;
+
     
    // teste de manière générique si les vecteurs sont triés
     cout << "Teste si les vecteurs sont tries: " << endl;
@@ -49,13 +52,16 @@ int main()
     cout << "vPoint: " << test(vPoint) << endl;
     cout << "vDate: " << test(vDate) << endl;
     
-    
+    cout << "#############################################################" << endl;
+
     // trie de manière générique
     tri(vString, vString.size());
     tri(vCouleur, vCouleur.size());
     //tri(vPoint, vPoint.size());
     //tri(vDate, vDate.size());
     
+    cout << "#############################################################" << endl;
+
     
     // Affichage des vecteurs triés
     cout << vString << endl;
@@ -63,6 +69,7 @@ int main()
     cout << vPoint << endl;
     cout << vDate << endl;
     
+    cout << "#############################################################" << endl;
     
     // Teste de manière générique que le tri se soit bien déroulé
     cout << "Teste si les vecteurs ont ete tries: " << endl;
@@ -70,6 +77,11 @@ int main()
     cout << "vCouleur: " << test(vCouleur) << endl;
     cout << "vPoint: " << test(vPoint) << endl;
     cout << "vDate: " << test(vDate) << endl;
+    
+    cout << "#############################################################" << endl;
+    cout << "#############################################################" << endl;
+
+    
     
     cout << "Appuyez sur n'importe quelle touche pour quitter le programme";
     cin.get();
