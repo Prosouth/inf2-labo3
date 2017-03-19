@@ -34,14 +34,24 @@ template <typename T> void swap(std::vector<T>& monVecteur, const size_t premier
    monVecteur[second] = temp;
 }
 
-// Fonction générique qui trie un vecteur
-template <typename T> void tri(std::vector<T>& monVecteur)
+// Fonction générique qui trie un vecteur avec l'algorithme bubble sort
+template <typename T> void tri(std::vector<T>& monVecteur, size_t taille) 
 {
-   for(auto i = monVecteur.begin(); i != monVecteur.end(); ++i)
+   bool swapped = true;
+   int j = 0;
+   T tmp;
+   while (swapped) 
    {
-      if(i != monVecteur.end() - 1 && *(i) > *(i + 1))
-      {
-         swap(monVecteur, (i), (i + 1));
+      swapped = false;
+      j++;
+      for (int i = 0; i < taille - j; i++) {
+         if (monVecteur[i] > monVecteur[i + 1]) 
+         {
+            tmp = monVecteur[i];
+            monVecteur[i] = monVecteur[i + 1];
+            monVecteur[i + 1] = tmp;
+            swapped = true;
+         }
       }
    }
 }

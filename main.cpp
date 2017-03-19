@@ -49,7 +49,9 @@ int main()
     cout << "vDate: " << test(vDate) << endl;
     
     // tris de manière générique
-    tri(vString);
+    tri(vString, vString.size() - 1);
+    
+    cout << vString << endl;
     
     
     // Affichage des vecteurs triés
