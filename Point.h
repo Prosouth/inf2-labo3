@@ -13,10 +13,12 @@
 #ifndef POINT_H
 #define POINT_H
 #include <vector>
+#include <iostream>
 
 class Point 
 {
    friend bool operator > (const Point& p1, const Point& p2);
+   friend std::ostream& operator << (std::ostream& os, const std::vector<Point>& vectPoint);
    
 public:
    Point(int coordX, int coordY);

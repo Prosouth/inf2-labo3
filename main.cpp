@@ -32,23 +32,22 @@ int main()
     VectPoint vPoint = {{1,2},{3,4},{5,5},{-1,7},{3,1}};
     VectDate vDate = {{1, 2, 1927}, {3, 4, 2002}, {5, 5, 2001}};
     
+    
+   // Affichage des vecteurs
+    cout << vString << endl; // définie dans Tri.h
+    cout << vCouleur << endl;
+    cout << vPoint << endl;
+    cout << vDate << endl;
+    
    // tests de manière générique
-    cout << test(vString) << endl;
-    cout << test(vCouleur) << endl;
-    cout << test(vPoint) << endl;
-    cout << test(vDate) << endl;
+    cout << "Teste si les vecteurs sont tries: " << endl;
+    cout  << boolalpha << "vString: " << test(vString) << endl;
+    cout << "vCouleur: " << test(vCouleur) << endl;
+    cout << "vPoint: " << test(vPoint) << endl;
+    cout << "vDate: " << test(vDate) << endl;
     
     // tris de manière générique
     //tri(vString);
-    
-    
-    vector<int> vInt = {1,2,3,4,5};
-    swap(vInt, 2,3);
-    
-    //tri(vInt);
-    
-
-    
     
     return EXIT_SUCCESS;
 }

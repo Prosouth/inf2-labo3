@@ -26,3 +26,12 @@ bool operator > (const Point& p1, const Point& p2)
 {
     return p1.distance() > p2.distance();
 }
+
+std::ostream& operator << (std::ostream& os, const std::vector<Point>& vectPoint)
+{
+    for(auto i : vectPoint)
+    {
+        os << i.distance() << " ";
+    }
+    return os; 
+}

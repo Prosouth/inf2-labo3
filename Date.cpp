@@ -22,3 +22,12 @@ bool operator > (const Date& date1, const Date& date2)
     return (date2.annee > date1.annee && date2.mois > date1.mois &&
             date2.jour > date1.jour);
 }
+
+std::ostream& operator << (std::ostream& os, const std::vector<Date>& vectDate)
+{
+    for (auto i : vectDate)
+    {
+        os << i.jour << "-" << i.mois << "-" << i.annee << " ";
+    }
+    return os;
+}

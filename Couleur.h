@@ -13,10 +13,18 @@
 
 #ifndef COULEUR_H
 #define COULEUR_H
+#include <vector>
 
 enum COULEUR {ORANGE = 1, GRAY, CYAN, ROUGE, BLEU, BRUN};
 const std::string TABCOULEUR[] = { "", "orange", "gray", "cyan", "rouge",
                                    "bleu", "brun"};
-
+std::ostream& operator << (std::ostream& os, const std::vector<COULEUR>& vectCouleur)
+{
+   for(auto i : vectCouleur)
+   {
+      os << TABCOULEUR[i] << " ";
+   }
+   return os; 
+}
 
 #endif /* COULEUR_H */

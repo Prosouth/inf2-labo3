@@ -54,4 +54,13 @@ template <typename T> bool test(const std::vector<T>& monVecteur)
 }
 
 
+std::ostream& operator << (std::ostream& os, const std::vector<std::string>& vectString)
+{
+   for(auto i : vectString)
+   {
+      os << i << " ";
+   }
+   return os; 
+}
+
 #endif /* TRI_H */
