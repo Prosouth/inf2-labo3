@@ -57,8 +57,8 @@ int main()
     // trie de manière générique
     tri(vString, vString.size());
     tri(vCouleur, vCouleur.size());
-    //tri(vPoint, vPoint.size());
-    //tri(vDate, vDate.size());
+    tri(vPoint, vPoint.size());
+    tri(vDate, vDate.size());
     
     cout << "#############################################################" << endl;
 
@@ -80,8 +80,7 @@ int main()
     
     cout << "#############################################################" << endl;
     cout << "#############################################################" << endl;
-
-    
+    cout << endl;
     
     cout << "Appuyez sur n'importe quelle touche pour quitter le programme";
     cin.get();

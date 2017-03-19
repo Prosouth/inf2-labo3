@@ -20,7 +20,6 @@
 
 // Déclaration
 template <typename T> void tri(std::vector<T>& monVecteur);
-template <typename T> void swap(std::vector<T>& monVecteur, size_t premier, size_t second);
 template <typename T> bool test(const std::vector<T>& monVecteur);
 
 
@@ -29,13 +28,57 @@ template <typename T> bool test(const std::vector<T>& monVecteur);
 template <typename T> void tri(std::vector<T>& monVecteur, size_t taille) 
 {
    bool echange = true;
-   int j = 0;
+   size_t j = 0;
    T temp;
    while (echange) 
    {
       echange = false;
       j++;
-      for (int i = 0; i < taille - j; i++) {
+      for (size_t i = 0; i < taille - j; i++) {
+         if (monVecteur[i] > monVecteur[i + 1]) 
+         {
+            temp = monVecteur[i];
+            monVecteur[i] = monVecteur[i + 1];
+            monVecteur[i + 1] = temp;
+            echange = true;
+         }
+      }
+   }
+}
+
+// Spécialisation pour la date
+template <> void tri(std::vector<Date>& monVecteur, size_t taille) 
+{
+   bool echange = true;
+   size_t j = 0;
+   Date temp(1,1,1900);
+   while (echange) 
+   {
+      echange = false;
+      j++;
+      for (size_t i = 0; i < taille - j; i++) {
+         if (monVecteur[i] > monVecteur[i + 1]) 
+         {
+            temp = monVecteur[i];
+            monVecteur[i] = monVecteur[i + 1];
+            monVecteur[i + 1] = temp;
+            echange = true;
+         }
+      }
+   }
+}
+
+// Spécialisation pour le Point
+template <> void tri(std::vector<Point>& monVecteur, size_t taille) 
+{
+   bool echange = true;
+   size_t j = 0;
+   Point temp(0,0);
+   while (echange) 
+   {
+      echange = false;
+      j++;
+      for (size_t i = 0; i < taille - j; i++) {
          if (monVecteur[i] > monVecteur[i + 1]) 
          {
             temp = monVecteur[i];
@@ -52,7 +95,7 @@ template <typename T> bool test(const std::vector<T>& monVecteur)
 {
    for(auto i = monVecteur.begin(); i != monVecteur.end(); ++i)
    {
-      if(i != monVecteur.end() - 1 && *(i)> *(i + 1))
+      if(i != monVecteur.end() - 1 && *(i) > *(i + 1))
       {
          return false;
       }

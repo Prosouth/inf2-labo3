@@ -18,8 +18,8 @@ Date::Date(short jour, short mois, short annee)
 
 bool operator > (const Date& date1, const Date& date2)
 {
-    return (date2.annee > date1.annee && date2.mois > date1.mois &&
-            date2.jour > date1.jour);
+    return (date2.jour > date1.jour && date2.mois > date1.mois &&
+            date2.annee > date1.annee);
 }
 
 std::ostream& operator << (std::ostream& os, const std::vector<Date>& vectDate)
