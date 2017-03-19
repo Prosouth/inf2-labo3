@@ -26,7 +26,8 @@ template <typename T> bool test(const std::vector<T>& monVecteur);
 
 // Définition
 // Fonction nécessaire pour le tri d'un vecteur, elle échange deux valeurs
-template <typename T> void swap(std::vector<T>& monVecteur, size_t premier, size_t second)
+template <typename T> void swap(std::vector<T>& monVecteur, const size_t premier, 
+                                const size_t second)
 {
    T temp = monVecteur[premier];
    monVecteur[premier] = monVecteur[second];
@@ -38,9 +39,9 @@ template <typename T> void tri(std::vector<T>& monVecteur)
 {
    for(auto i = monVecteur.begin(); i != monVecteur.end(); ++i)
    {
-      if(i != monVecteur.end() - 1 && i > i + 1)
+      if(i != monVecteur.end() - 1 && *(i) > *(i + 1))
       {
-         swap(monVecteur, i, i + 1);
+         swap(monVecteur, (i), (i + 1));
       }
    }
 }
