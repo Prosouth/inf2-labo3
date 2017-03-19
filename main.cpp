@@ -41,21 +41,38 @@ int main()
     cout << vPoint << endl;
     cout << vDate << endl;
     
-   // tests de manière générique
+    
+   // teste de manière générique si les vecteurs sont triés
     cout << "Teste si les vecteurs sont tries: " << endl;
     cout  << boolalpha << "vString: " << test(vString) << endl;
     cout << "vCouleur: " << test(vCouleur) << endl;
     cout << "vPoint: " << test(vPoint) << endl;
     cout << "vDate: " << test(vDate) << endl;
     
-    // tris de manière générique
-    tri(vString, vString.size() - 1);
     
-    cout << vString << endl;
+    // trie de manière générique
+    tri(vString, vString.size());
+    tri(vCouleur, vCouleur.size());
+    //tri(vPoint, vPoint.size());
+    //tri(vDate, vDate.size());
     
     
     // Affichage des vecteurs triés
+    cout << vString << endl;
+    cout << vCouleur << endl;
+    cout << vPoint << endl;
+    cout << vDate << endl;
     
+    
+    // Teste de manière générique que le tri se soit bien déroulé
+    cout << "Teste si les vecteurs ont ete tries: " << endl;
+    cout  << boolalpha << "vString: " << test(vString) << endl;
+    cout << "vCouleur: " << test(vCouleur) << endl;
+    cout << "vPoint: " << test(vPoint) << endl;
+    cout << "vDate: " << test(vDate) << endl;
+    
+    cout << "Appuyez sur n'importe quelle touche pour quitter le programme";
+    cin.get();
     
     return EXIT_SUCCESS;
 }
