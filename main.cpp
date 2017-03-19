@@ -51,5 +51,9 @@ int main()
     // tris de manière générique
     //tri(vString);
     
+    
+    // Affichage des vecteurs triés
+    
+    
     return EXIT_SUCCESS;
 }

@@ -15,7 +15,6 @@
  
  Compilateur : g++ (GCC) 6.3.1 20170306
  ------------------------------------------------------------------------------- */
-#ifndef TRI_H
 #ifndef POINT_H
 #define POINT_H
 #include <vector>
@@ -34,4 +33,5 @@ private:
    double coordX;
    double coordY;
 };
+
 #endif /* POINT_H */
