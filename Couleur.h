@@ -19,8 +19,4 @@ const std::string TABCOULEUR[] = { "", "orange", "gray", "cyan", "rouge",
                                    "bleu", "brun"};
 
 
-
-
-
-
 #endif /* COULEUR_H */
