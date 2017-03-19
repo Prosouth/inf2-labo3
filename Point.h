@@ -1,15 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Point.h
- * Author: prosouth
- *
- * Created on 14 March 2017, 15:10
- */
+/* -------------------------------------------------------------------------------
+ Laboratoire: 3 - Fonction générique
+ Fichier    : Point.h
+ Auteur(s)  : Kevin Cristi et Sébastien Saez
+ Date       : 20 mars 2017
+ 
+ But        : Ce fichier met à disposition la classe Point avec les attributs X et Y..
+ *            Afin de calculer la longueur d'un point et de pouvoir les comparer, nous
+ *            avons utilisé la fonction distance qui calcule la longueur entre deux
+ *            points. Nous avons également surchargé deux opérateurs: l'opérateur
+ *            > afin de pouvoir faire des comparaisons entre deux points et l'opérateur
+ *            << pour afficher.
+ 
+ Remarque(s) : 
+ 
+ Compilateur : g++ (GCC) 6.3.1 20170306
+ ------------------------------------------------------------------------------- */
+#ifndef TRI_H
 #ifndef POINT_H
 #define POINT_H
 #include <vector>

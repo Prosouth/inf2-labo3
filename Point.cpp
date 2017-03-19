@@ -1,16 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Point.cpp
- * Author: prosouth
- * 
- * Created on 14 March 2017, 15:10
- */
-
+/* -------------------------------------------------------------------------------
+ Laboratoire: 3 - Fonction générique
+ Fichier    : Point.cpp
+ Auteur(s)  : Kevin Cristi et Sébastien Saez
+ Date       : 20 mars 2017
+ 
+ But        : Ce fichier met en oeuvre les fonctions précédemment déclarées dans le
+ *            Point.h
+ 
+ Remarque(s) : 
+ 
+ Compilateur : g++ (GCC) 6.3.1 20170306
+ ------------------------------------------------------------------------------- */
+#ifndef TRI_H
 #include "Point.h"
 #include <cmath>
 

@@ -1,16 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Date.h
- * Author: prosouth
- *
- * Created on 14 March 2017, 15:10
- */
-
+/* -------------------------------------------------------------------------------
+ Laboratoire: 3 - Fonction générique
+ Fichier    : Point.h
+ Auteur(s)  : Kevin Cristi et Sébastien Saez
+ Date       : 20 mars 2017
+ 
+But        : Ce fichier met à disposition la classe Date avec les attributs jour,
+ *            mois et année. Afin de pouvoir comparer une date, nous avons surchargé
+ *            deux opérateurs: l'opérateur > afin de pouvoir faire des comparaisons 
+ *            entre deux points et l'opérateur << pour afficher.
+ 
+ Remarque(s) : 
+ 
+ Compilateur : g++ (GCC) 6.3.1 20170306
+ ------------------------------------------------------------------------------- */
 #ifndef DATE_H
 #define DATE_H
 #include <vector>

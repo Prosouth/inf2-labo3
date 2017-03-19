@@ -1,21 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Date.cpp
- * Author: prosouth
- * 
- * Created on 14 March 2017, 15:10
- */
-
+/* -------------------------------------------------------------------------------
+ Laboratoire: 3 - Fonction générique
+ Fichier    : Date.cpp
+ Auteur(s)  : Kevin Cristi et Sébastien Saez
+ Date       : 20 mars 2017
+ 
+ But        : Ce fichier met en oeuvre les fonctions précédemment déclarées dans 
+ *            le Date.h
+ 
+ Remarque(s) : 
+ 
+ Compilateur : g++ (GCC) 6.3.1 20170306
+ ------------------------------------------------------------------------------- */
 #include "Date.h"
 
 Date::Date(short jour, short mois, short annee)
 : jour(jour), mois(mois), annee(annee) {}
-
 
 bool operator > (const Date& date1, const Date& date2)
 {

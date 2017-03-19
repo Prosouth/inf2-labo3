@@ -1,16 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   tri.h
- * Author: prosouth
- *
- * Created on 14 March 2017, 15:37
- */
-
+/* -------------------------------------------------------------------------------
+ Laboratoire: 3 - Fonction générique
+ Fichier    : Tri.h
+ Auteur(s)  : Kevin Cristi et Sébastien Saez
+ Date       : 20 mars 2017
+ 
+ But        : Ce fichier met à disposition l'opérateur les outils nécessaires afin
+ *            de réaliser un tri sur des vecteurs ainsi que la vérification que les 
+ *            vecteurs soient bien ordonnés.
+ 
+ Remarque(s) : Nous avons trouvé plus judicieux de mettre la surcharge de l'opérateur
+ *             << pour les vecteurs de strings ici plutôt que polluer le main.cpp.
+ 
+ Compilateur : g++ (GCC) 6.3.1 20170306
+ ------------------------------------------------------------------------------- */
 #ifndef TRI_H
 #define TRI_H
 #include <vector>
@@ -23,6 +25,7 @@ template <typename T> bool test(const std::vector<T>& monVecteur);
 
 
 // Définition
+// Fonction nécessaire pour le tri d'un vecteur, elle échange deux valeurs
 template <typename T> void swap(std::vector<T>& monVecteur, size_t premier, size_t second)
 {
    T temp = monVecteur[premier];
@@ -30,6 +33,7 @@ template <typename T> void swap(std::vector<T>& monVecteur, size_t premier, size
    monVecteur[second] = temp;
 }
 
+// Fonction générique qui trie un vecteur
 template <typename T> void tri(std::vector<T>& monVecteur)
 {
    for(auto i = monVecteur.begin(); i != monVecteur.end(); ++i)
@@ -41,6 +45,7 @@ template <typename T> void tri(std::vector<T>& monVecteur)
    }
 }
 
+// Fonction générique qui vérifie qu'un vecteur soit trié
 template <typename T> bool test(const std::vector<T>& monVecteur)
 {
    for(auto i = monVecteur.begin(); i != monVecteur.end(); ++i)
@@ -53,7 +58,7 @@ template <typename T> bool test(const std::vector<T>& monVecteur)
    return true;
 }
 
-
+// Surcharge de l'opérateur << pour l'affichage des vecteurs de string
 std::ostream& operator << (std::ostream& os, const std::vector<std::string>& vectString)
 {
    for(auto i : vectString)

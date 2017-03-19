@@ -1,15 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   main.cpp
- * Author: prosouth
- *
- * Created on 14 March 2017, 15:05
- */
+/* -------------------------------------------------------------------------------
+ Laboratoire: 3 - Fonction générique
+ Fichier    : main.cpp
+ Auteur(s)  : Kevin Cristi et Sébastien Saez
+ Date       : 20 mars 2017
+ 
+ But        : Le but de ce laboratoire est de mettre en oeuvre la compilation
+ *            séparée ainsi que les fonctions génériques. Nous disposons de
+ *            plusieurs vecteurs de types différents à afficher puis trier.
+ 
+ Remarque(s) : 
+ 
+ Compilateur : g++ (GCC) 6.3.1 20170306
+ ------------------------------------------------------------------------------- */
 #include <cstdlib>
 #include <vector>
 #include <string>

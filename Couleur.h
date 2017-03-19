@@ -1,16 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Couleur.h
- * Author: prosouth
- *
- * Created on 15 March 2017, 17:55
- */
-
+/* -------------------------------------------------------------------------------
+ Laboratoire: 3 - Fonction générique
+ Fichier    : Couleur.h
+ Auteur(s)  : Kevin Cristi et Sébastien Saez
+ Date       : 20 mars 2017
+ 
+ But        : Ce fichier met à disposition l'opérateur d'affichage << ainsi
+ *            qu'une énumération de couleur et sa table de correspondance afin
+ *            de ne pas avoir le décalage de 1 dans les indices.
+ 
+ Remarque(s) : 
+ 
+ Compilateur : g++ (GCC) 6.3.1 20170306
+ ------------------------------------------------------------------------------- */
 #ifndef COULEUR_H
 #define COULEUR_H
 #include <vector>
