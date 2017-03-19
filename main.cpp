@@ -42,6 +42,11 @@ int main()
     //tri(vString);
     
     
+    vector<int> vInt = {1,2,3,4,5};
+    swap(vInt, 2,3);
+    
+    tri(vInt);
+    
 
     
     
