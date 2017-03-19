@@ -45,14 +45,13 @@ template <typename T> bool test(const std::vector<T>& monVecteur)
 {
    for(auto i = monVecteur.begin(); i != monVecteur.end(); ++i)
    {
-      if(i != monVecteur.end() - 1 && i > i + 1)
+      if(i != monVecteur.end() - 1 && *(i)> *(i + 1))
       {
          return false;
       }
    }
    return true;
 }
-
 
 
 #endif /* TRI_H */
