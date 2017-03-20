@@ -82,7 +82,7 @@ int main()
     cout << "#############################################################" << endl;
     cout << endl;
     
-    cout << "Appuyez sur n'importe quelle touche pour quitter le programme";
+    cout << "Appuyez sur ENTER pour quitter le programme";
     cin.get();
     
     return EXIT_SUCCESS;
