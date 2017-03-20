@@ -34,7 +34,8 @@ template <typename T> void tri(std::vector<T>& monVecteur, size_t taille)
    {
       echange = false;
       j++;
-      for (size_t i = 0; i < taille - j; i++) {
+      for (size_t i = 0; i < taille - j; i++) 
+      {
          if (monVecteur[i] > monVecteur[i + 1]) 
          {
             temp = monVecteur[i];
@@ -56,7 +57,8 @@ template <> void tri(std::vector<Date>& monVecteur, size_t taille)
    {
       echange = false;
       j++;
-      for (size_t i = 0; i < taille - j; i++) {
+      for (size_t i = 0; i < taille - j; i++) 
+      {
          if (monVecteur[i] > monVecteur[i + 1]) 
          {
             temp = monVecteur[i];
@@ -78,7 +80,8 @@ template <> void tri(std::vector<Point>& monVecteur, size_t taille)
    {
       echange = false;
       j++;
-      for (size_t i = 0; i < taille - j; i++) {
+      for (size_t i = 0; i < taille - j; i++) 
+      {
          if (monVecteur[i] > monVecteur[i + 1]) 
          {
             temp = monVecteur[i];
