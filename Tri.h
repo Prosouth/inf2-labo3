@@ -1,18 +1,21 @@
-/* -------------------------------------------------------------------------------
- Laboratoire: 3 - Fonction générique
- Fichier    : Tri.h
- Auteur(s)  : Kevin Cristi et Sébastien Saez
- Date       : 20 mars 2017
+/*
+-------------------------------------------------------------------------------
+ Laboratoire : 3 - Fonction générique
+ Fichier     : Tri.h
+ Auteur(s)   : Kevin Cristi et Sébastien Saez
+ Date        : 20 mars 2017
  
- But        : Ce fichier met à disposition l'opérateur les outils nécessaires afin
- *            de réaliser un tri sur des vecteurs ainsi que la vérification que les 
- *            vecteurs soient bien ordonnés.
+ But         : Ce fichier met à disposition l'opérateur les outils
+               nécessaires afin de réaliser un tri sur des vecteurs ainsi
+               que la vérification que les vecteurs soient bien ordonnés.
  
- Remarque(s) : Nous avons trouvé plus judicieux de mettre la surcharge de l'opérateur
- *             << pour les vecteurs de strings ici plutôt que polluer le main.cpp.
+ Remarque(s) : Nous avons trouvé plus judicieux de mettre la surcharge de
+               l'opérateur << pour les vecteurs de strings ici plutôt que
+               polluer le main.cpp.
  
  Compilateur : g++ (GCC) 6.3.1 20170306
- ------------------------------------------------------------------------------- */
+-------------------------------------------------------------------------------
+*/
 #ifndef TRI_H
 #define TRI_H
 #include <vector>
@@ -107,7 +110,8 @@ template <typename T> bool test(const std::vector<T>& monVecteur)
 }
 
 // Surcharge de l'opérateur << pour l'affichage des vecteurs de string
-std::ostream& operator << (std::ostream& os, const std::vector<std::string>& vectString)
+std::ostream& operator << (std::ostream& os, 
+                           const std::vector<std::string>& vectString)
 {
    for(auto i : vectString)
    {

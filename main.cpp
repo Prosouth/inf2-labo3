@@ -1,4 +1,5 @@
-/* -------------------------------------------------------------------------------
+/* 
+-------------------------------------------------------------------------------
  Laboratoire: 3 - Fonction générique
  Fichier    : main.cpp
  Auteur(s)  : Kevin Cristi et Sébastien Saez
@@ -8,10 +9,12 @@
  *            séparée ainsi que les fonctions génériques. Nous disposons de
  *            plusieurs vecteurs de types différents à afficher puis trier.
  
- Remarque(s) : 
+ Remarque(s) : Le vecteur de point est classé par la distance entre les deux 
+ *             points
  
  Compilateur : g++ (GCC) 6.3.1 20170306
- ------------------------------------------------------------------------------- */
+-------------------------------------------------------------------------------
+*/
 #include <cstdlib>
 #include <vector>
 #include <string>

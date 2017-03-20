@@ -1,4 +1,5 @@
-/* -------------------------------------------------------------------------------
+/* 
+-------------------------------------------------------------------------------
  Laboratoire: 3 - Fonction générique
  Fichier    : Couleur.h
  Auteur(s)  : Kevin Cristi et Sébastien Saez
@@ -11,14 +12,18 @@
  Remarque(s) : 
  
  Compilateur : g++ (GCC) 6.3.1 20170306
- ------------------------------------------------------------------------------- */
+-------------------------------------------------------------------------------
+*/
 #ifndef COULEUR_H
 #define COULEUR_H
 #include <vector>
 
 enum COULEUR {ORANGE = 1, GRAY, CYAN, ROUGE, BLEU, BRUN};
+// Tableau de correspondance avec l'énumération
 const std::string TABCOULEUR[] = { "", "orange", "gray", "cyan", "rouge",
                                    "bleu", "brun"};
+
+// Surcharge de l'opérateur << afin d'afficher les vecteurs de Couleurs
 std::ostream& operator << (std::ostream& os, const std::vector<COULEUR>& vectCouleur)
 {
    for(auto i : vectCouleur)
